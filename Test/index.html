@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>入室確認</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="transition.js"></script>
+		<!-- <script src="flow.js"></script> -->
+	</head>
+
+	<body>
+		<div>
+			<h1>入室確認</h1>
+			<form class="text-input" name="form" method="get">
+				<input
+					type="text"
+					id="user_id"
+					placeholder="Try typing employee number in here!"
+					name="user_id"
+				/>
+				<button
+					type="submit"
+					class="bt"
+					onclick="return transit('user_id', 'GET');"
+				>
+					Send
+				</button>
+			</form>
+			<div>
+				<br />
+				<br />
+			</div>
+			<!-- <div class="noname">
+				<a class="btn cubic"
+					><span class="hovering">Now, Hovering</span
+					><span class="default">Anonymization</span></a
+				>
+			</div> -->
+		</div>
+	</body>
+</html>
